@@ -1,0 +1,37 @@
+date
+cal
+cal 12 2020
+logname
+hostname
+who
+whoami
+echo
+ls
+ls /etc
+ls -l /etc
+ls -al /etc
+ls ~
+ls .
+cat
+cat -n /etc/bashrc
+nl /etc/vimrc
+nl /etc/services
+head /etc/ser-->
+head -5 /etc/ser-->
+tail /etc/ser-->
+oooo | nl
+man oooo
+cd
+cd /
+pwd
+cd /usr/local
+cd ..
+cd ../bin
+cd ~
+touch
+vi
+cp -i(interactive, 질문) -r(revursive, 하위)
+mv
+rm -f(force, 강제)
+mkdir
+rmdir
