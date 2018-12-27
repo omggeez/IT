@@ -22,5 +22,11 @@ alias rq='rpm -qa | grep'
 alias pq='ps -ef | grep'
 alias pt='ping -c3 8.8.8.8'
 
+vi ~/.exrc
+se nu
+se cindent
+se ai
+se ts=4
+
 gcc (C)
 java-devel (java)
