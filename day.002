@@ -35,3 +35,6 @@ W -> w 소문자로 (~)
 
 gcc (C)
 java-devel (java)
+
+useradd OOO
+passwd OOO
