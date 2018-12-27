@@ -1,0 +1,23 @@
+리눅스 설치
+
+장치-게스트확장CD이미지
+클립보드,드래그-양방향
+
+root 계정은 #, user 계정은 $
+
+runlevel //현재 runlevel
+systemctl set-default multi-user.target
+systemctl enable sshd
+systemctl disable firewalld //방화벽 해제
+reboot
+
+vim ~/.bashrc
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias vi='vim'
+alias c='clear'
+alias h='history'
+alias rq='rpm -qa | grep'
+alias pq='ps -ef | grep'
+alias pt='ping -c3 8.8.8.8'
