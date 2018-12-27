@@ -27,6 +27,7 @@ se nu
 se cindent
 se ai
 se ts=4
+set paste
 
 vi /etc/bashrc
 41라인 [ "$PS1" = "\\s-\\v\\\$ " ] && PS1="[\u@\h \W]\\$ "
