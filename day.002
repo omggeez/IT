@@ -6,8 +6,8 @@
 root 계정은 #, user 계정은 $
 
 runlevel //현재 runlevel
-systemctl set-default multi-user.target
-systemctl enable sshd
+systemctl set-default multi-user.target // 런레벨을 텍스트로(3번)
+systemctl enable sshd //ssh 가능 설정
 systemctl disable firewalld //방화벽 해제
 reboot
 
@@ -21,3 +21,6 @@ alias h='history'
 alias rq='rpm -qa | grep'
 alias pq='ps -ef | grep'
 alias pt='ping -c3 8.8.8.8'
+
+gcc (C)
+java-devel (java)
