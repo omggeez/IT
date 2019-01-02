@@ -39,6 +39,8 @@ ctrl+D // quit
 2^n bit(binary digit)
 표현범위 1 ~ 2^n -1
 
+byte 문자 하나를 처리하기 위한 단위
+
 2^10 = 1024 = 1K
 2^20 = 1M
 2^30 = 1G
