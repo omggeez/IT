@@ -66,8 +66,11 @@ getchar <-> putchar (문자 전용)
 gets <-> puts (문자열 전용)
 scanf <-> printf (복합)
 
-%d //decimal, 정수
-%f //float, 실수
-%lf //long float(double)
-%c //character, 문자
+%d //decimal, 정수(10진수)
+%f //float, 실수(4byte)
+%lf //long float(double), 큰 실수(8byte)
+%c //character, 한 문자
 %s //string, 문자열
+
+signed // +,- 부호 있음
+unsigned // + 부호만
