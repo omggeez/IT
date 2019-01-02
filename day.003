@@ -26,6 +26,10 @@ gg = G // 들여쓰기 정렬
 절차지향적 언어 (일 순서대로) - C (핵심은 함수)
 객체지향적 언어 
 
+char - 1byte
+int - 4byte
+double - 8byte
+
 python
 2**8 // 1byte=256 (2의 8승)
 2**16 // 2byte=65536
