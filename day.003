@@ -92,3 +92,9 @@ unsigned // + 부호만
 
 int a // 4byte
 int a[100] // 400byte
+
+CPU-----Memory-----HDD/SDD
+
+소스코드 게시
+https://colorscripter.com/
+
