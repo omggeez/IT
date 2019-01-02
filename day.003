@@ -55,3 +55,7 @@ ASCII code
 \t // 탭
 \a // 알람
 \b // 백스페이스
+
+stdin // standard input
+stdout // standard output
+stdio // standard input/output
