@@ -35,3 +35,8 @@ python
 2**16 // 2byte(16bit)=65536
 2**32 // 4byte(32bit)=4294967296
 ctrl+D // quit
+
+hex // 16진수
+dec // 10진수
+oct // 8진수
+bin // 2진수
