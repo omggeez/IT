@@ -1,0 +1,25 @@
+소스파일           목적파일   				실행파일
+ace.c		------>		ace.obj		------>		ace.exe
+               		컴파일				         링크
+
+----------------------------------------------------------------------------------------------------
+compiler
+linker
+----------------------------------------------------------------------------------------------------
+IDE 환경 (Integrated Development Environment, 통합개발환경)
+Dev-C++
+VC++(Visual Studio 내에 존재)
+TurboC
+gcc
+
+자바 - eclipse
+
+DLL (Dynamic Link Library)
+
+short <= int <= long
+
+gg = G // 들여쓰기 정렬
+
+' = single quote, 홑따옴표
+" = double quote, 곁따옴표
+
