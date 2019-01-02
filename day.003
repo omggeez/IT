@@ -18,7 +18,7 @@ DLL (Dynamic Link Library)
 
 short <= int <= long
 
-gg = G // 들여쓰기 정렬
+gg = G // 들여쓰기(indent) 정렬
 
 ' = single quote, 홑따옴표
 " = double quote, 곁따옴표
@@ -83,3 +83,10 @@ unsigned // + 부호만
 < 작다 lt
 >= 크거나 같다 ge
 <= 작거나 같다 le
+
+() 소괄호
+{} 중괄호
+[] 대괄호
+
+int a // 4byte
+int a[100] // 400byte
