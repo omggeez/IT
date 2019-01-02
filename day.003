@@ -56,6 +56,6 @@ ASCII code
 \a // 알람
 \b // 백스페이스
 
-stdin // standard input
-stdout // standard output
+stdin // standard input 표준 입력장치는 키보드
+stdout // standard output 표준 출력장치는 모니터
 stdio // standard input/output
