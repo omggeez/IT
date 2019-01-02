@@ -59,3 +59,15 @@ ASCII code
 stdin // standard input 표준 입력장치는 키보드
 stdout // standard output 표준 출력장치는 모니터
 stdio // standard input/output
+
+표준 입/출력 함수
+
+getchar <-> putchar (문자 전용)
+gets <-> puts (문자열 전용)
+scanf <-> printf (복합)
+
+%d //decimal, 정수
+%f //float, 실수
+%lf //long float(double)
+%c //character, 문자
+%s //string, 문자열
