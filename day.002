@@ -21,7 +21,7 @@ alias mv='mv -i'
 alias vi='vim'
 alias c='clear'
 alias h='history'
-alias rq='rpm -qa | grep'
+alias rq='rpm -qa | grep' //설치 검색
 alias pq='ps -ef | grep'
 alias pt='ping -c3 8.8.8.8'
 
