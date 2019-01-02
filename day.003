@@ -72,5 +72,14 @@ scanf <-> printf (복합)
 %c //character, 한 문자
 %s //string, 문자열
 
-signed // +,- 부호 있음
+signed // +,- 부호 있음, 기본값
 unsigned // + 부호만
+
+변수 Variable   상수 Constant
+
+== 같다 eq(equal)
+!= 같지않다 ne(not equal)
+> 크다 gt
+< 작다 lt
+>= 크거나 같다 ge
+<= 작거나 같다 le
