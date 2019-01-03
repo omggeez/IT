@@ -1,3 +1,14 @@
 제어문의 종류
 - 반복분 : for, while, do ~ while
 - 조건문 : if, if ~ else, 다중 if, switch, continue, break
+
+%p // pointer
+%d // -21억 ~ 21억
+%u // unsigned, 0~약 42억 9천만
+
+배열은 그 자체로 주소
+&a - a의 주소
+
+int a[10];
+n = sizeof(a)/sizeof(int) // int 개수 구하기, n = 4*10/4 = 10
+
