@@ -12,3 +12,9 @@
 int a[10];
 n = sizeof(a)/sizeof(int) // int 개수 구하기, n = 4*10/4 = 10
 
+(sum = sum + i) == (sum += i)
+
+for (초기값; 종료조건; 증가/감소치)
+{ 만족하는동안 }
+
+do ~ while // 조건이 거짓이라도 처음 1회는 실행함
