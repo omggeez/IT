@@ -1,5 +1,5 @@
 %p // pointer
-%d // -21억 ~ 21억
+%d // decimal, -21억 ~ 21억
 %u // unsigned, 0~42억
 
 배열은 그 자체로 주소
