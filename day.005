@@ -35,11 +35,16 @@ typedef struct OOO // 사용자 정의 자료형, 구조체
 
 . // 멤버 연산자
 
+return type (리턴값의 형태) // ex) int, char, float ...
+return value (리턴값) // result, 결과
+parameter (매개변수)
+argument (전달인수, 전달인자)
+
 리턴형  함수명  (매개변수...);
 int     atoi   ( const char * str );
 int     rand   ( void );
 
-return type (리턴값의 형태)
-return value (리턴값)
-parameter (매개변수)
-argument (전달인수, 전달인자)
+void // 빈칸
+
+함수의 종류
+표준함수 / 시스템제공함수 / 내장함수
