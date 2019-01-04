@@ -1,0 +1,12 @@
+sizeof() // 메모리 할당 크기 (byte)
+
+문자열은 맨 마지막 공간에 NULL 문자를 포함
+%d로 출력하면 주소 값이 나온다
+
+strcat(a, "ooo"); // 문자열 a 뒤에 ooo 추가, cat은 concatenate의 약자
+strcpy(a, "ooo"); // 문자열 a를 ooo로 변경, cpy는 copy의 약자
+strlen(a) // 문자열 a의 길이
+
+printf(" %d \n", strcmp("AA", "AD")); // -1 (같으면 0, 왼쪽이 크면 1, 왼쪽이 작으면 -1)
+
+literal // 상수영역에 저장
