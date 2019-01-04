@@ -34,3 +34,8 @@ typedef struct OOO // 사용자 정의 자료형, 구조체
 }OOO;
 
 . // 멤버 연산자
+
+return type (리턴값의 형태)
+return value (리턴값)
+parameter (매개변수)
+argument (전달인수, 전달인자)
