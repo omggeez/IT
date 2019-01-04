@@ -35,7 +35,7 @@ typedef struct OOO // 사용자 정의 자료형, 구조체
 
 . // 멤버 연산자
 
-리턴형   함수명 (매개변수...);
+리턴형  함수명 (매개변수...);
 int     atoi   ( const char * str );
 int     rand   ( void );
 
