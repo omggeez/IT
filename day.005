@@ -48,3 +48,8 @@ void // 빈칸
 
 함수의 종류
 표준함수 / 시스템제공함수 / 내장함수
+
+int f1(int x) // void f1(int x)가 아니라 리턴 값이 5이기에 int f1(int x)가 되어야 한다
+{
+return 5
+}
