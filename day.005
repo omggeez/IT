@@ -37,8 +37,8 @@ typedef struct OOO // 사용자 정의 자료형, 구조체
 
 return type (리턴값의 형태) // ex) int, char, float ...
 return value (리턴값) // result, 결과
-parameter (매개변수)
-argument (전달인수, 전달인자)
+parameter (매개변수) // 호출을 위한 변수
+argument (전달인수, 전달인자) // parameter에 주어진 실질적인 값
 
 리턴형  함수명  (매개변수...);
 int     atoi   ( const char * str );
