@@ -7,3 +7,20 @@ JSP/Servlet → Spring(Framework, 기초, 토대, 틀)
 SE - JDK(Java Development Kit)
 EE - Servlet Container(Web Server)
 
+변수 - 데이터 저장 공간(메모리)
+자료형(data type) - value(data)
+
+변수
+1. 선언(공간 확보)
+2. 대입
+3. 사용
+
+자바
+- 기본형(Primitve)
+  숫자(정수[byte(1byte), short/char(2), *int(4)*, long(8)], 실수[float(4), *double(8)*]), 논리
+  *는 기본
+  long(8) < float(4) // 정수는 실수보다 작다
+- 참조형(객체형, Reference)
+
+4+"Hi" // string+string, "4"로 바뀜, + 연산자만 가능
+4+'A' // int+char
