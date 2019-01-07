@@ -1,4 +1,7 @@
 JAVA - SE(Standard Edition), **EE(Enterprise), ME(Micro)
+  ↓
+JSP/Servlet → Spring(Framework, 기초, 토대, 틀)
 
-JSP/Servlet -> Spring(Framework, 기초, 토대, 틀)
+SE - JDK(Java Development Kit)
+EE - Servlet Container(Web Server)
 
