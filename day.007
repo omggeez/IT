@@ -29,3 +29,4 @@ for
 while
 do ~ while
 
+String name = "OOO"; // String은 데이터타입, name은 변수, "OOO"는 데이터타입에 맞는 값
