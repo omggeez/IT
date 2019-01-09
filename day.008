@@ -1,3 +1,10 @@
 public class OOO // class define, 정의와 선언만 가능, 변수(멤버) 선언
+public static void main(String[] args) // 함수(메서드) 선언, 구현
 
-public static void main(String[] args) // 함수(메서드) 선언
+if (boolean 조건식) // 조건은 결과값이 true/false만 나오면 됨, true 일대 블록 안으로 들어감
+
+switch (정수, 문자열) // int, string, **enum(열거형 상수)
+
+(**중요**) enum // 값의 종류, 범위 설정
+final // 상수(한번 입력되면 못 바꿈) ex) pi(3.14...)
+
