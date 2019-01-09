@@ -1,0 +1,3 @@
+public class OOO // class define, 정의와 선언만 가능, 변수(멤버) 선언
+
+public static void main(String[] args) // 함수(메서드) 선언
