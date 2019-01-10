@@ -1,0 +1,23 @@
+System.out.println(""); // 출력 (줄 바꿈 O)
+System.out.print(""); // 출력 (줄 바꿈 X)
+System.out.printf(""); // 출력 (줄 바꿈 X, 지정된 포맷으로 출력)
+System.out.print("\n"); // 출력 (줄 바꿈 O), \n 개행문자(줄 바꿈 특수문자)
+
+(boolean expr) ? expr true : expr false; // 삼항연산자
+
+Array // 배열, Data Type, 동일한 Data set
+- (칸수) length가 고정 // 고정 길이 Data set
+- 순서가 있음. index를 이용(0 ~ )
+
+JRE
+JVM // OOO.class -> main(), class 실행
+
+*** 중요 ***
+Stack // 모든 변수, ex) int i, String s, int a[]
+Heap // 참조형이 만들어짐, 참조형 값, ex) "Hi"
+
+기본형
+참조형 // 기본형 8가지 제외한 것. ex) String, Array
+
+int int int int int
+[0] [1] [2] [3] [4] //int[5]
