@@ -14,7 +14,7 @@ JVM // OOO.class -> main(), class 실행
 
 *** 중요 ***
 Stack // 모든 변수, ex) int i, String s, int a[]
-Heap // 참조형이 만들어짐, 참조형 값, ex) "Hi"
+Heap // 객체가 저장되는 곳, 참조형이 만들어짐, 참조형 값, ex) "Hi"
 
 기본형 // 숫자 7가지 타입, 논리(boolean)
 참조형 // 기본형 8가지 제외한 것. ex) String, Array
