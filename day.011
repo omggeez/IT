@@ -1,0 +1,13 @@
+*** Day6 프로젝트 - 배열 ***
+
+Account [] // 주소 100이 저장
+↓
+Account [] // 주소 100
+Account[0] // Account 주소 10이 저장
+Account[1] // Account 주소 20이 저장
+Account[2] // Account 주소 30이 저장
+↓
+Account {name, balance} // 주소 10, 20, 30에 해당
+↓
+String name // name은 String 타입이므로 따로 저장
+
