@@ -12,3 +12,6 @@ Account {name, balance} // 주소 10, 20, 30에 해당
 ↓
 String name // name은 String 타입이므로 따로 저장
 
+객체
+변수(상태) // Field
+기능 // Method
