@@ -1,7 +1,8 @@
 *** Day6 프로젝트 - 배열 ***
-
+[Stack]
 Account [] // 주소 100이 저장
 ↓
+[Heap]
 Account [] // 주소 100
 Account[0] // Account 주소 10이 저장
 Account[1] // Account 주소 20이 저장
