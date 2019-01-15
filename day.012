@@ -25,3 +25,9 @@ AccountManager (생성자) // 클래스명과 같음
 ↓ 연결
 
 Account[] 0~n // value 저장, 주소 200에 해당
+
+↓ 연결
+
+Account // Account class
+- name
+- balance
