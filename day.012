@@ -12,8 +12,9 @@ AccountManager
 [Stack]
 AccountManager
 bank // null, reference 저장, 주소 값 assign (100)
+↓ 연결
 [Heap]
 AccountManager (생성자) // 클래스명과 같음
 accounts[] // 주소값에 맞는 array value 주소 assign (200)
-
+↓ 연결
 Account[] 0~n // value 저장, 주소 200에 해당
