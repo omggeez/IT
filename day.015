@@ -2,3 +2,4 @@
 abstract class // 추상 클래스, 무엇을 한다는 있지만, 어떻게 한다는 구체화되지 않음
 // abstract가 붙는 순간 new(개별 객체 생성 시, 배열([])은 공간을 만들기에 가능)가 안됨
 // abstract 메서드 body({ })가 없이 abstract public void OOO(); 로 끝남
+
