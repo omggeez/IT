@@ -1,0 +1,9 @@
+** OOP 3대 속성 ***
+- encapsulation 캡슐화
+- inheritance 부모자식 관계로 클래스간 계층이 생김
+- polymorphism 상속을 했을 때 발생 변수나 매개변수나 실제 동작 때 발생 (overriding)
+
+class interface // 둘다 extends(상속) 가능 [하나만 지정]
+
+class --> interface // implements [n개 지정] (자바에서 다중상속을 구현할 수 있도록 확장성을 해줌)
+
