@@ -15,3 +15,5 @@ Wrapper class
 array // 길이의 제한 O
 collection // 길이의 제한 X, 길이를 자동으로 늘이거나 줄여줌
 
+interface에 body 가 있는 method 도 정의 가능 // since 1.8
+
