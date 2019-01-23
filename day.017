@@ -7,3 +7,11 @@ class interface // 둘다 extends(상속) 가능 [하나만 지정]
 
 class --> interface // implements [n개 지정] (자바에서 다중상속을 구현할 수 있도록 확장성을 해줌)
 
+primitive Type // 기본형, 8개
+Reference Type // 참조형, Object 이하 (자바에선 Reference가 메인)
+
+Wrapper class
+
+array // 길이의 제한 O
+collection // 길이의 제한 X, 길이를 자동으로 늘이거나 줄여줌
+
