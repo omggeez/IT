@@ -1,0 +1,5 @@
+Error - 복구 불가능, 프로그램이 어찌할 수 없는 영역 (메모리, HDD, CPU, 전기가 나감 등)
+Exception - 예외 처리, 2가지로 나뉨
+- Exception (컴파일 계열, checked)
+- Runtime (런타임 계열, unchecked)
+
