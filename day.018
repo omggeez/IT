@@ -3,3 +3,6 @@ Exception - 예외 처리, 2가지로 나뉨
 - Exception (컴파일 계열, 컴파일러 checked)
 - Runtime (런타임 계열, 컴파일러 unchecked) - 프로그래머의 몫
 
+String -> StringBuffer -> StringBuilder
+String // 불변
+StringBuffer // 가변, String보다 성능 유리
