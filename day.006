@@ -31,7 +31,7 @@ Workspace - Text file encoding - Other - UTF-8
 Ctrl + Space = 자동 완성
 Ctrl + Shift = 자동 들여쓰기
 
-JRE(Java Runtime Environment, 자바 실행 환경)
+JRE(Java Runtime Environment, 자바 실행 환경) 안에 JVM(Java Virtual Machine, 자바 가상 머신)에서 실행을 함
 
 HelloWorld.java
    ↓ Compile
