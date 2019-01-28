@@ -15,3 +15,12 @@ alter user hr account unlock; // hr 계정의 lock 해제
 alter user hr identified by "a1234" // hr 계정의 암호 변경
 conn hr/a1234 // hr계정 접속
 
+sqlplus hr/a1234 // 접속
+
+@"경로\OOO.sql" // sql파일 불러오기
+
+select 컬럼, [컬럼, ...] as "OOO" // *는 전체, as(alias) OOO로 column명 변경
+from 테이블
+
+nvl(OOO, 0) // null value를 0으로 출력
+
