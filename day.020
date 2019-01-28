@@ -21,6 +21,15 @@ sqlplus hr/a1234 // 접속
 
 select 컬럼, [컬럼, ...] as "OOO" // *는 전체, as(alias) OOO로 column명 변경
 from 테이블
+where 조건
 
 nvl(OOO, 0) // null value를 0으로 출력
+
+distinct // 중복 제거, 여러 column을 조회할 때는 row가 다 똑같은 중복만 제가
+
+|| // 연결연산자 (+)
+
+LIKE // ex)게시판 검색
+LIKE O%% // 0개 이상 임의의 문자열이 있다는 의미, O가 들어가는 모든 값
+LIKE _O_ // 문자가 1개 있다는 의미, 3글자면서 가운데가 O인 값
 
