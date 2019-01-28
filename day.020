@@ -8,3 +8,10 @@ SQL Developer
 primarykey(기본키) // 중복X, 값이 있어야 됨, 테이블 당 1개만 존재
 foreignkey(외래키) // 다른 테이블의 primary 값 참조
 
+sqlplus "/as sysdba" // 관리자 접속
+sqlplus / system / 암호 // 관리자 접속
+
+alter user hr account unlock; // hr 계정의 lock 해제
+alter user hr identified by "a1234" // hr 계정의 암호 변경
+conn hr/a1234 // hr계정 접속
+
