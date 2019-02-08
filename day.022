@@ -1,0 +1,202 @@
+-- rownum : 자동적으로 순번을 지정 // 게시판 페이지 나누기
+SELECT t.*
+FROM (SELECT ROWNUM AS rnum, e.*
+        FROM (SELECT *
+                FROM employee
+            ORDER BY emp_name) e) t
+WHERE rnum BETWEEN 11 AND 20;
+
+-- 회원 정보 관리 테이블
+-- 테이블명 : member (회원)
+-- 컬럼 목록 :
+-- id(아이디), 문자열(varchar2) // 가변형이므로 varchar2
+-- pw(비밀번호), 문자열(varchar2)
+-- name(이름), 문자열(varchar2)
+-- address(주소), 문자열(varchar2)
+
+create table member (
+    id          varchar2(10),
+    pw          varchar2(10),
+    name        varchar2(10),
+    address     varchar2(500)
+);
+
+insert into member
+values ('abcd', '1234', 'hong', 'seoul');
+
+insert into member (id, pw, name)
+values('xyz', '789', 'kim');
+
+insert into member (name, address, id)
+values('park', 'busan', 'test');
+
+insert into member (id, name, address)
+(   select     emp_id,
+               emp_name,
+               email
+    from       employee);
+
+commit;
+
+update  member
+set     pw = 'sample';
+
+rollback;
+
+update  member
+set     pw = 'sample'
+where   pw is null;
+
+update  member
+set     pw = 'example',
+        name = 'Gil-Dong',
+        address = 'LA'
+where   id = 'abcd';
+
+rollback;
+
+delete from member
+where   pw is null;
+
+alter table member
+modify (id varchar2(15));
+
+desc member;
+
+insert into member (id)
+values ('012345678910');
+
+update member
+set     pw = '';
+
+alter table member
+modify (pw number);
+
+rollback;
+
+desc member;
+
+alter table member
+add     (point number);
+
+alter table member
+drop    (address, point);
+
+drop table member;
+
+create table member (
+    id varchar2(10)     primary key,
+    pw varchar2(10)
+);
+
+drop table member;
+
+create table member (
+    id varchar2(10),
+    pw varchar2(10),
+    constraint member_pk primary key (id)
+);
+
+drop table member;
+
+create table member (
+    id  varchar2(10) unique,
+    pw  varchar2(10)
+);
+
+drop table member;
+
+create table member (
+    id  varchar2(10) not null,
+    pw  varchar2(10)
+);
+
+drop table member;
+
+create table member (
+    id  varchar2(10) primary key,
+    pw  varchar2(10)
+);
+
+create table member_order (
+    num number,
+    id  varchar2(10),
+    constraint member_order_fk foreign key(id) references member(id)
+--  constraint 제약조건명 foreign key(설정 대상 컬럼) references 참조테이블(PK)
+);
+
+desc member;
+desc member_order;
+
+insert into member values ('123', 'abc');
+insert into member_order values (1, '123');
+
+select * from member;
+select * from member_order;
+
+-- sequence 문법
+-- create sequence 시퀀스명
+-- increment by 1 (증가폭)
+-- start with 1 (시작번호)
+
+create sequence board_seq
+start with 1
+increment by 1;
+
+drop sequence board_seq;
+
+-- 게시글 번호
+select  board_seq.nextval
+from dual;
+
+-- 현재 번호
+select board_seq.currval
+from dual;
+
+-- view
+create or replace view employee_view
+as
+select  emp_id,
+        emp_name,
+        job_id,
+        mgr_id,
+        dept_id
+from    employee
+where   dept_id = '90';
+
+select * from employee_view
+where job_id = 'J2';
+
+create table tb_test (
+    emp_no      varchar2(3) primary key,
+    emp_name    varchar2(10) not null,
+    dept_name   varchar2(20)
+);
+
+insert into tb_test values ('10', 'aaa', 'ㄱㄱㄱ');
+insert into tb_test values ('20', 'bbb', 'ㄴㄴㄴ');
+insert into tb_test values ('30', 'ccc', 'ㄷㄷㄷ');
+insert into tb_test values ('40', 'ddd', 'ㄹㄹㄹ');
+
+desc tb_test;
+
+create or replace view v_test
+as
+select  emp_no,
+        emp_name
+from    tb_test
+where   emp_no in ('10', '20')
+--with read only;
+with check option;
+
+insert into v_test values ('10','zzz');
+
+delete from v_test
+where       emp_no = '10';
+
+update  v_test
+set     emp_name = '홍길동';
+
+select * from tb_test;
+select * from v_test;
+
