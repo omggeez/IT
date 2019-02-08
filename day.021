@@ -34,3 +34,564 @@ subquery
 - 입력, 수정, 삭제 불가
 - 오직 검색만 수행할 수 있음.
 
+
+
+
+
+
+
+
+
+SELECT
+    email,
+    length(email),
+    length('대한민국')
+FROM
+    employee;
+
+-- 교수 이름이 4자인 교수의 이름을 출력하라.
+
+SELECT
+    professor_name
+FROM
+    tb_professor
+WHERE
+    length(professor_name) = 4;
+
+SELECT
+    chartype,
+    length(chartype),
+    varchartype,
+    length(varchartype)
+FROM
+    column_length;
+
+-- length
+
+SELECT
+    lengthb('a'),
+    lengthc('가')
+FROM
+    dual;
+
+-- instr
+
+SELECT
+    instr('abcabcabc', 'b'),
+    instr('abcabcabc', 'b', - 1),
+    instr('abcabcabc', 'b', 3),
+    instr('abcabcabc', 'b', 1, 2)
+FROM
+    dual;
+
+-- email에서 @의 위치(index)를 찾아라.
+
+SELECT
+    email,
+    instr(email, '@')
+FROM
+    employee;
+
+-- lpad
+
+SELECT
+    lpad('1234', 10, '*'),
+    rpad('1234', 10, '*')
+FROM
+    dual;
+
+SELECT
+    salary,
+    lpad(' ', round(salary / 500000), '*')
+FROM
+    employee;
+
+-- trim
+
+SELECT
+    '  123123123',
+    ltrim('  123123123'),
+    '11111234',
+    ltrim('11111234', '1'),
+    ltrim('11111234', '12'),
+    ltrim('11111234', '3'),
+    ltrim('11111234', '21')
+FROM
+    dual;
+
+-- trim
+
+SELECT
+    TRIM('   123456   ') AS a,
+    TRIM(leading FROM '   123456   ') AS b,
+    TRIM(trailing FROM '   123456   ') AS c,
+    TRIM('*' FROM '**test******') AS d
+FROM
+    dual;
+
+SELECT
+    substr('abcdefg', 1),
+    substr('abcdefg', 3, 3),
+    substr('abcdefg', - 2),
+    substr('abcdefg', 3, 10),
+    substr('abcdefg', 0, 2)
+FROM
+    dual;
+
+-- 직원의 email 주소 중 도메인을 제거하고 출력하세요.
+-- abc@test.com => abc
+
+SELECT
+    email,
+    instr(email, '@'),
+    substr(email, 1, instr(email, '@') - 1)
+FROM
+    employee;
+
+-- round (자릿수 반올림)
+
+SELECT
+    round(123.456),
+    round(123.456, 1),
+    round(76543.21, - 3)
+FROM
+    dual;
+
+-- sysdate
+
+SELECT
+    TO_CHAR(SYSDATE, 'yyyy"년"mm"월"dd"일 "hh"시"mi"분"ss"초"')
+FROM
+    dual;
+
+SELECT
+    trunc((months_between(SYSDATE, '92/03/27') / 12)) AS 나이,
+    SYSDATE - TO_DATE('1992/03/27', 'yyyy/mm/dd'),
+    to_number(TO_CHAR(SYSDATE, 'yyyy')) - 1992
+FROM
+    dual;
+
+SELECT
+    TO_CHAR(SYSDATE, 'year:yyyy:yy'),
+    TO_CHAR(SYSDATE, 'month:mon:mm')
+FROM
+    dual;
+
+-- 2019년 12월 25일의 요일을 출력하세요.
+-- 또한 1년 중 몇일째 되는 날인지 출력하세요.
+
+SELECT
+    TO_CHAR(TO_DATE('2019/12/25', 'yyyy/mm/dd'), 'ddd : day')
+FROM
+    dual;
+
+SELECT
+    TO_CHAR(TO_DATE('98/01/01', 'yy/mm/dd'), 'yyyy/mm/dd'),
+    TO_CHAR(TO_DATE('98/01/01', 'rr/mm/dd'), 'yyyy/mm/dd'),
+    TO_CHAR(TO_DATE('19/03/01', 'rr/mm/dd'), 'yyyy/mm/dd')
+FROM
+    dual;
+
+SELECT
+    emp_name   AS "이름",
+    salary     AS "월급여",
+    salary * 12 AS "년급여",
+    ( salary * 12 ) * nvl(bonus_pct, 0) AS "보너스 금액",
+    TRIM(TO_CHAR((salary * 12) +((salary * 12) * nvl(bonus_pct, 0)), 'L999,999,999')) AS "총 급여"
+FROM
+    employee;
+
+-- decode (if/else)
+
+SELECT
+    DECODE(15, 1, 'one', 5, 'five', 10, 'ten', 'other')
+FROM
+    dual;
+
+SELECT
+    emp_id,
+    emp_name,
+    mgr_id,
+    DECODE('141', mgr_id, '사원', '관리자')
+FROM
+    employee
+WHERE
+    dept_id = '50';
+
+-- case
+
+SELECT
+    emp_name   AS 이름,
+    salary     AS 월급여,
+    CASE
+        WHEN salary > 5000000 THEN
+            'GOOD ^^'
+        WHEN salary > 3000000 THEN
+            'SOSO'
+        WHEN salary > 2000000 THEN
+            'BAD ㅠㅠ'
+        ELSE
+            '다른 곳을 알아봐야겠다.'
+    END AS 평가
+FROM
+    employee;
+
+-- count
+
+SELECT
+    COUNT(*)
+FROM
+    employee;
+
+SELECT
+    *
+FROM
+    employee;
+
+-- order by
+
+SELECT
+    dept_id,
+    job_id,
+    emp_name
+FROM
+    employee
+ORDER BY
+    dept_id ASC,
+    job_id DESC,
+    emp_name ASC;
+
+-- group by
+-- 부서별 평균급여를 구하세요.
+
+SELECT
+    dept_id,
+    AVG(nvl(salary, 0))
+FROM
+    employee
+GROUP BY
+    dept_id;
+
+-- 직급별 평균급여를 구하세요.
+
+SELECT
+    job_id,
+    AVG(salary)
+FROM
+    employee
+GROUP BY
+    job_id;
+
+-- 부서별, 직급별 평균급여를 구하세요.
+
+SELECT
+    dept_id,
+    job_id,
+    emp_name,
+    trunc(AVG(nvl(salary, 0)))
+FROM
+    employee
+GROUP BY
+    dept_id,
+    job_id,
+    emp_name
+ORDER BY
+    dept_id,
+    job_id,
+    emp_name;
+
+SELECT
+    dept_id,
+    SUM(salary)
+FROM
+    employee
+GROUP BY
+    dept_id;
+
+-- having
+-- where(일반조건), having(그룹조건)
+-- 부서별 급여의 합계가 500만원 이상인 부서의 부서명과 급여의 합을 출력하세요.
+
+SELECT
+    dept_id,
+    SUM(salary)
+FROM
+    employee
+GROUP BY
+    dept_id
+HAVING
+    SUM(salary) >= 5000000
+ORDER BY
+    dept_id;
+
+-- join
+
+SELECT
+    e.emp_name,
+    d.dept_name,
+    j.job_title
+FROM
+    employee     e,
+    department   d,
+    job          j
+WHERE
+    e.dept_id = d.dept_id
+    AND e.job_id = j.job_id;
+
+-- 컴퓨터공학과에 다니는 학생의 이름과 학번, 학과명을 출력하세요.
+
+SELECT
+    s.student_name,
+    s.student_no,
+    d.department_name
+FROM
+    tb_student      s,
+    tb_department   d
+WHERE
+    s.department_no = d.department_no
+    AND d.department_name = '컴퓨터공학과';
+
+SELECT
+    student_name,
+    department_name
+FROM
+    tb_student
+    JOIN tb_department USING ( department_no );
+
+-- 대리직급 사원의 이름과 부서명을 출력하세요.
+
+SELECT
+    emp_name,
+    dept_name
+FROM
+    employee     e,
+    department   d,
+    job          j
+WHERE
+    e.dept_id = d.dept_id
+    AND e.job_id = j.job_id
+    AND job_title = '대리';
+
+SELECT
+    emp_name,
+    dept_name
+FROM
+    employee
+    JOIN department USING ( dept_id )
+    JOIN job USING ( job_id )
+WHERE
+    job_title = '대리';
+
+SELECT
+    dept_name,
+    loc_describe
+FROM
+    department
+    JOIN location ON ( loc_id = location_id );
+
+SELECT
+    dept_name,
+    loc_describe
+FROM
+    department   d,
+    location     l
+WHERE
+    d.loc_id = l.location_id;
+
+-- (Oracle) outer join (둘다 +는 안됨)
+
+SELECT
+    emp_name,
+    dept_name
+FROM
+    employee     e,
+    department   d
+WHERE
+    e.dept_id (+) = d.dept_id;
+
+-- (ANSI) outer join (둘다 + 가능, full)
+
+SELECT
+    emp_name,
+    dept_name
+FROM
+    employee
+    LEFT OUTER JOIN department USING ( dept_id );
+--right outer join department using (dept_id)
+--full outer join department using (dept_id)
+
+-- (Oracle) join - Non Equijoin (범위)
+
+SELECT
+    emp_name,
+    salary,
+    slevel
+FROM
+    employee    e,
+    sal_grade   g
+WHERE
+    e.salary BETWEEN g.lowest AND g.highest;
+
+-- (ANSI) Join - Non Equijoin (범위)
+
+SELECT
+    emp_name,
+    salary,
+    slevel
+FROM
+    employee
+    JOIN sal_grade ON ( salary BETWEEN lowest AND highest );
+
+-- (Oracle) self join
+
+SELECT
+    e.emp_name   AS "직원",
+    m.emp_name   AS "관리자"
+FROM
+    employee   e,
+    employee   m
+WHERE
+    e.mgr_id = m.emp_id (+);
+
+-- (ANSI) self join
+
+SELECT
+    e.emp_name   AS "직원",
+    m.emp_name   AS "관리자"
+FROM
+    employee   e
+    JOIN employee   m ON ( e.mgr_id = m.emp_id );
+
+-- set (union, union all, intersect, minus)
+
+SELECT
+    emp_id,
+    emp_name,
+    NULL
+FROM
+    employee
+UNION ALL
+SELECT
+    emp_id,
+    emp_name,
+    salary
+FROM
+    employee
+WHERE
+    dept_id = '90';
+
+-- union 구문을 이용하여 '50' 부서원을 관리자와 직원을 구분하여 표시하세요.
+
+SELECT
+    emp_name,
+    '직원' AS "구분"
+FROM
+    employee
+WHERE
+    mgr_id IS NOT NULL
+    AND dept_id = '50'
+UNION
+SELECT
+    emp_name,
+    '관리자' AS "구분"
+FROM
+    employee
+WHERE
+    mgr_id IS NULL
+    AND dept_id = '50';
+
+-- 국어국문학과에 다니는 학생을 출력하세요.
+
+SELECT
+    student_name
+FROM
+    tb_student
+WHERE
+    department_no = (
+        SELECT
+            department_no
+        FROM
+            tb_department
+        WHERE
+            department_name = '국어국문학과'
+    );
+
+SELECT
+    emp_name,
+    dept_id,
+    salary
+FROM
+    employee
+WHERE
+    salary IN (
+        SELECT
+            AVG(salary)
+        FROM
+            employee
+        GROUP BY
+            dept_id
+    );
+
+SELECT DISTINCT
+    mgr_id
+FROM
+    employee
+WHERE
+    mgr_id IS NOT NULL;
+
+-- Subquery - 다중행
+
+SELECT
+    emp_id,
+    emp_name,
+    CASE
+        WHEN emp_id IN (
+            SELECT DISTINCT
+                mgr_id
+            FROM
+                employee
+            WHERE
+                mgr_id IS NOT NULL
+        ) THEN
+            '관리자'
+        ELSE
+            '직원'
+    END AS "구분"
+FROM
+    employee
+ORDER BY
+    3,
+    1;
+
+-- any, all
+
+SELECT
+    emp_name,
+    salary
+FROM
+    employee
+WHERE
+    job_id = (
+        SELECT
+            job_id
+        FROM
+            job
+        WHERE
+            job_title = '대리'
+    )
+    AND salary > ANY (
+        SELECT
+            salary
+        FROM
+            employee
+        WHERE
+            job_id = (
+                SELECT
+                    job_id
+                FROM
+                    job
+                WHERE
+                    job_title = '과장'
+            )
+    );
+
