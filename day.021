@@ -7,8 +7,12 @@
 
 2. unique
 - 중복값을 허용하지 않는다.
-- null 은 삽입할 수 있다.
+- null 을 허용한다.
 
 3. not null
 - null 을 허용하지 않는다.
+
+4. foreign key
+- 다른 테이블의 primary key로 선언된 컬럼의 값만 사용할 수 있다.
+- null 을 허용한다.
 
