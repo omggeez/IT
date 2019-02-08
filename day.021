@@ -16,3 +16,21 @@
 - 다른 테이블의 primary key로 선언된 컬럼의 값만 사용할 수 있다.
 - null 을 허용한다.
 
+*** View ***
+- 기본 테이블 중 일부를 사용할 수 있게 만든 가상의 테이블
+- 기본 테이블과 동일한 형태로 검색, 입력, 삭제, 수정을 할 수 있다. (단, 제약조건에 위배되지 않을 경우)
+
+-- syntax --
+create or replace view 뷰이름
+as
+subquery
+[with check option]
+[with read only]
+;
+
+1. with check option
+- 뷰를 사용하여 입력 시, 뷰 생성 조건에 맞는 값이어야 입력됨.
+2. with read only
+- 입력, 수정, 삭제 불가
+- 오직 검색만 수행할 수 있음.
+
