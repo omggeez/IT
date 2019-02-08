@@ -1,7 +1,23 @@
--- jdbc start --
+-- JDBC START --
 
-java project - properties - java build path - libraries - add external jars
+Java project - Properties - Java Build Path - Libraries - Add External jars
 
-jdbc driver
+JDBC Driver Path
 C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6_g.jar
+
+제어판 - 서비스 - OracleServiceXE, OracleXETNSListener 실행
+
+try {
+			// 1. Driver Loading
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			System.out.println("--- Driver loading success ---");
+			
+			// 2. Connection
+			String url = "jdbc:oracle:thin@localhost:1521:XE";
+			String user = "hr";
+			String pass = "a1234";
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
