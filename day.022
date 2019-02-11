@@ -200,3 +200,4 @@ set     emp_name = '홍길동';
 select * from tb_test;
 select * from v_test;
 
+.
