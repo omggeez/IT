@@ -5,3 +5,13 @@ ArrayList  |      Set      |      MAP
     O    순서      X
     O    중복      X
 
+<> // Generic, 타입 한정
+
+node -> node // Stream
+
+       | 1byte           |   2byte
+input  | InputStream     |   Reader
+output | OutputStream    |   Writer
+
+nodeStream
+filterStream // node 다음 Stream
