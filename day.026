@@ -1,11 +1,11 @@
 --- web start ---
 
-환경변수
+환경변수 설정
 JAVA_HOME
 jdk주소
 
 https://tomcat.apache.org
 
 server.xml (tomcat/conf)
-Server -> Service -> Connector -> port
+Server -> Service -> Connector -> port // 80포트라면 주소에 포트번호 생략
 
