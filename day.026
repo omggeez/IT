@@ -34,3 +34,9 @@ Client ---(session_id)---> Server // session_id는 중복되지 않음
 
 session은 get/setAttribute
 
+// 작성한 jsp가 변환되어 저장되어 있음
+D:\study\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\webTest\org\apache\jsp
+
+// DB 사용 (WebContent\lib -> jar 파일 저장)
+C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6_g.jar
+
