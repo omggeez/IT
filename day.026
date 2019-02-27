@@ -9,3 +9,23 @@ https://tomcat.apache.org
 server.xml (tomcat/conf)
 Server -> Service -> Connector -> port // 80포트라면 주소에 포트번호 생략
 
+// jsp 오류
+properties -> targeted runtimes -> apache tomcat 체크
+
+Servlet
+JAVA 안에 HTML
+
+JSP
+HTML 안에 JAVA
+
+HTTP error
+404 // @WebServlet("/OOO") 의 OOO명이 다를 때
+405 // get이 아닌 post일때
+
+*** ServletRequest ***
+- Servlet으로 전달된 정보를 가지고 있는 객체
+- 주요 메소드
+  String          getParameter("key")         // key와 연결된 value를 추출
+  String[]        getParameterValues("key")   // key와 연결된 여러개의 value를 추출
+  Enumberation    getParameterNames()         // 전달된 key들을 모음
+
