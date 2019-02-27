@@ -29,3 +29,6 @@ HTTP error
   String[]        getParameterValues("key")   // key와 연결된 여러개의 value를 추출
   Enumeration     getParameterNames()         // 전달된 key들을 모음
 
+Session // 저장공간, Map과 같음, key value로 값을 저장, 클라이언트가 접속을 끊으면 사라짐
+Client ---(session_id)---> Server // session_id는 중복되지 않음
+
