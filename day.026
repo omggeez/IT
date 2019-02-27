@@ -6,3 +6,6 @@ jdk주소
 
 https://tomcat.apache.org
 
+server.xml (tomcat/conf)
+Server -> Service -> Connector -> port
+
