@@ -1,6 +1,6 @@
 *** MVC ***
-M : Model => java
-V : View => jsp
+M : Model(화면의 데이터) => java
+V : View(화면 구성) => jsp
 C : Controller => servlet
 
 [MVC의 전제조건]
