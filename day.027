@@ -1,0 +1,11 @@
+*** MVC ***
+M : Model => java
+V : View => jsp
+C : Controller => servlet
+
+[MVC의 전제조건]
+1. Controller는 하나(only on)다.
+2. View는 수동적이다.
+  -> 필요한 데이터를 직접 호출하여 획득하지 않는다.
+
+
