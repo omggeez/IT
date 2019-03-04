@@ -1,0 +1,24 @@
+MVC
+// Model
+JSP // View
+Servlet // Controller
+
+jsp
+1. sendRedirect // 새로운 Request가 발생
+response.sendRedirect("OOO.jsp");
+
+        A               B
+------> | sendRedirect  |
+request |-------------> |
+        |   request(new)|
+
+
+2. forward // 기존의 Request가 다음 페이지에 전달
+RequestDispatcher rd = request.getRequestDispatcher("OOO.jsp");
+rd.forward(request, response)
+
+        A               B
+------> |   forward     |
+request |-------------> |
+        |   request     |
+
