@@ -5,6 +5,7 @@ Servlet // Controller
 
 jsp
 1. sendRedirect // 새로운 Request가 발생
+request.setAttribute("test", "sample");
 response.sendRedirect("OOO.jsp");
 
         A               B
@@ -15,7 +16,7 @@ request |-------------> |
 
 2. forward // 기존의 Request가 다음 페이지에 전달
 RequestDispatcher rd = request.getRequestDispatcher("OOO.jsp");
-rd.forward(request, response)
+rd.forward(request, response);
 
         A               B
 ------> |   forward     |
