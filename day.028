@@ -4,7 +4,7 @@ JSP // View
 Servlet // Controller
 
 jsp
-1. sendRedirect // 새로운 Request가 발생
+1. sendRedirect // 새로운 Request가 발생, URL 바뀜
 request.setAttribute("test", "sample");
 response.sendRedirect("OOO.jsp");
 
@@ -14,7 +14,7 @@ request |-------------> |
         |   request(new)|
 
 
-2. forward // 기존의 Request가 다음 페이지에 전달
+2. forward // 기존의 Request가 다음 페이지에 전달, URL 안바뀜
 RequestDispatcher rd = request.getRequestDispatcher("OOO.jsp");
 rd.forward(request, response);
 
