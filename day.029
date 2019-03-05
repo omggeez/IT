@@ -1,0 +1,7 @@
+          Command Factory         BoardList.do          BoardUpdateCommand          BoardDAO               Table
+boardUpdate.do          execute()                                          update()             update ...
+
+
+OOO.do // sendRedirect 로 보내야됨
+OOO.jsp // forward 로 보내야됨
+
