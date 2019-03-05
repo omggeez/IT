@@ -23,6 +23,8 @@ OOO.jsp // forward 로 보내야됨
           name : 이미 생성된 객체변수명
           property : set 접두어를 제외한 Method 이름
           value : 저장할 값
+    - getParameter() 사용을 하지 않아도 전달된 parameter를 받을 수 있다.
+    - 단, parameter의 Key 이름과 Method 이름이 일치하여야 한다.
 
 (3) <jsp:getProperty />
     - 객체의 set Method 호출
