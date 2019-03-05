@@ -1,11 +1,12 @@
           Command Factory         BoardList.do          BoardUpdateCommand          BoardDAO               Table
    boardUpdate.do |      execute()     |                         |        update()      |       update ...    |
-   ----------->   |   ------------->   |   ----------------------|------------------->  |   -------------->   |
+   ----------->   |   ------------->   |   ----------------------|------------------>   |   -------------->   |
 
 OOO.do // sendRedirect 로 보내야됨
 OOO.jsp // forward 로 보내야됨
 
 *** Action Tag ***
+
 1. 배경
 - JSP에서 자바코드를 태그의 형태로 표현할 수 있도록 만들어 놓은 태그
 
@@ -25,6 +26,7 @@ OOO.jsp // forward 로 보내야됨
           value : 저장할 값
     - getParameter() 사용을 하지 않아도 전달된 parameter를 받을 수 있다.
     - 단, parameter의 Key 이름과 Method 이름이 일치하여야 한다.
+    - ex) <jsp:setProperty property="*" name="xxx" />
 
 (3) <jsp:getProperty />
     - 객체의 set Method 호출
@@ -32,5 +34,6 @@ OOO.jsp // forward 로 보내야됨
           property : get 접두어를 제외한 Method 이름
     - 주의
           * 호출하면 화면에 값을 출력한다.
+
 
 
