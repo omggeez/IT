@@ -1,0 +1,9 @@
+                    doEndTag
+                       |
+<color>| ..... </color>|
+       |               |
+   doStartTag
+
+EVAL_BODY_INCLUDE // BODY를 읽음
+SKIP_BODY         // BODY를 안읽음
+
