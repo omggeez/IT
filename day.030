@@ -7,4 +7,5 @@
 EVAL_BODY_INCLUDE // BODY를 읽음
 SKIP_BODY         // BODY를 안읽음
 EVAL_PAGE         // endTag 뒤를 다 읽음
+EVAL_BODY_AGAIN   // BODY 다시 읽음
 
