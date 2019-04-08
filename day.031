@@ -28,10 +28,8 @@ gcc --version // 버전 확인 (ex. 4.8.5 20150623)
 
 ctrl + L // 클리어
 
-sql 접속
-sqlite3
-.table // 테이블 보기
-.header on // 컬럼명
-.mode columns // 컬럼명 사이 ---- 넣기
-.exit // 종료
+# mysql
+# create database aDB;
+# use aDB
+# create table
 
