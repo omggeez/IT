@@ -36,12 +36,12 @@ ctrl + L // 클리어
 # use aDB
 # create table
 
-# vi a.c
-# gcc a.c -o a
-# ./a
+$ vi a.c
+$ gcc a.c -o a
+$ ./a
 
-# vi b.java
-# javac b.java
-# java b
+$ vi b.java
+$ javac b.java
+$ java b
 
 
