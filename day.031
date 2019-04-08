@@ -1,0 +1,5 @@
+CodeSegment // 함수 코드 메소드
+DataSegment // 상수 정적(static)변수 리터럴
+Heap // 동적할당
+Stack // 지역변수 매개변수
+
