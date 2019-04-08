@@ -11,24 +11,24 @@ Stack // 지역변수 매개변수
 
 설정-네트워크-고급-포트포워딩-호스트/게스트 포트22 추가
 
-rpm -qa | grep gcc // 설치 패키지 조회
-rpm -qa | grep jdk
-rpm -qa | grep python
-rpm -qa | grep sqlite
+# rpm -qa | grep gcc // 설치 패키지 조회
+# rpm -qa | grep jdk
+# rpm -qa | grep python
+# rpm -qa | grep sqlite
 
-rpm -qa | nl // 넘버라인 붙이기
-rpm -qa | wc -l // 라인수만 알아보기
+# rpm -qa | nl // 넘버라인 붙이기
+# rpm -qa | wc -l // 라인수만 알아보기
 
-yum list java*jdk-devel // 설치 가능한 패키지 확인
+# yum list java*jdk-devel // 설치 가능한 패키지 확인
 
-yum -y install gcc // 패키지 설치
-yum -y install vim
-yum -y install mariadb
-yum -y install mariadb-server
-yum -y install java-1.8.0-openjdk
-yum -y install java-1.8.0-openjdk-devel
-yum -y install man-pages
-yum -y install man-pages-ko
+# yum -y install gcc // 패키지 설치
+# yum -y install vim
+# yum -y install mariadb
+# yum -y install mariadb-server
+# yum -y install java-1.8.0-openjdk
+# yum -y install java-1.8.0-openjdk-devel
+# yum -y install man-pages
+# yum -y install man-pages-ko
 
 gcc --version // 버전 확인 (ex. 4.8.5 20150623)
 
@@ -64,7 +64,7 @@ p // ^v
 
 gg // 처음
 G // 마지막
-=G // 자동 정렬
+gg=G // 자동 정렬
 
 41 enter // 41번째 줄로 가기
 맨뒤 W를 소문자로 ~눌러서 바꾸기 (경로를 다 보여줌)
