@@ -44,4 +44,10 @@ $ vi b.java
 $ javac b.java
 $ java b
 
+# vi /etc/bashrc
+:q! // 강제 종료
+:wq // 저장후 종료
+:se nu // 행 번호
+41 enter // 41번째 줄로 가기
+맨뒤 W 소문자로 ~눌러서 바꾸기
 
