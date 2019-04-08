@@ -30,6 +30,8 @@ Stack // 지역변수 매개변수
 # yum -y install man-pages
 # yum -y install man-pages-ko
 
+systemctl start mariadb // db 서버 실행
+
 ps -ef | grep gcc // 프로세스 실행 확인
 
 gcc --version // 버전 확인 (ex. 4.8.5 20150623)
