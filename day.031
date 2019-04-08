@@ -84,4 +84,6 @@ PATH=.:$PATH // 경로 ./ 설정
 sizeof() // memory 할당 크기, 연산자
 strlen() // 문자열의 길이, null 제외, 함수
 strcmp( , ) // 같으면 0, 크면 1, 작으면 -1
+strcat // 문자열 연결
+strcpy // 문자열 복사
 
