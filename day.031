@@ -73,7 +73,7 @@ se ai
 se cindent
 se ts=4
 se sw=4
-set mouse=a
+se mouse=a
 
 PATH=.:$PATH // 경로 ./ 설정
 
