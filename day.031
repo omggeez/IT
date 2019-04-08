@@ -19,10 +19,13 @@ rpm -qa | grep sqlite
 rpm -qa | nl // 넘버라인 붙이기
 rpm -qa | wc -l // 라인수만 알아보기
 
+yum list java*jdk-devel // 설치 가능한 패키지 확인
+
 yum -y install gcc // 패키지 설치
 yum -y install vim
 yum -y install mariadb
 yum -y install mariadb-server
+yum -y install java-1.8.0-openjdk
 
 gcc --version // 버전 확인 (ex. 4.8.5 20150623)
 
@@ -32,4 +35,13 @@ ctrl + L // 클리어
 # create database aDB;
 # use aDB
 # create table
+
+# vi a.c
+# gcc a.c -o a
+# ./a
+
+# vi b.java
+# javac b.java
+# java b
+
 
