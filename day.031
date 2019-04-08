@@ -11,3 +11,17 @@ Stack // 지역변수 매개변수
 
 설정-네트워크-고급-포트포워딩-호스트/게스트 포트22 추가
 
+rpm -qa | grep gcc // 설치 확인
+rpm -qa | grep jdk
+rpm -qa | grep python
+rpm -qa | grep sqlite
+
+ctrl + L // 클리어
+
+sql 접속
+sqlite3
+.table // 테이블 보기
+.header on // 컬럼명
+.mode columns // 컬럼명 사이 ---- 넣기
+.exit // 종료
+
