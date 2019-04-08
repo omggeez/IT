@@ -49,5 +49,18 @@ $ java b
 :wq // 저장후 종료
 :se nu // 행 번호
 41 enter // 41번째 줄로 가기
-맨뒤 W 소문자로 ~눌러서 바꾸기
+맨뒤 W 소문자로 ~눌러서 바꾸기 (경로를 다 보여줌)
+
+# vim ~/.bashrc
+alias vi='vim'
+alias h='history'
+alias c='clear'
+
+# vim ~/.exrc
+se nu
+se ai
+se ci
+se ts=4
+se sw=4
+
 
