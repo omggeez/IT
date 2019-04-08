@@ -26,6 +26,9 @@ yum -y install vim
 yum -y install mariadb
 yum -y install mariadb-server
 yum -y install java-1.8.0-openjdk
+yum -y install java-1.8.0-openjdk-devel
+yum -y install man-pages
+yum -y install man-pages-ko
 
 gcc --version // 버전 확인 (ex. 4.8.5 20150623)
 
