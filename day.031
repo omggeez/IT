@@ -87,7 +87,7 @@ se nu
 se ai
 se cindent
 se ts=4
-se sw=4
+se shiftwidth=4
 se mouse=a
 
 PATH=.:$PATH // 경로 ./ 설정
