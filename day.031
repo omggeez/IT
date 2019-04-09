@@ -34,7 +34,7 @@ Stack // 지역변수 매개변수
 # rpm -e --nodeps gcc // 의존성 검사 생략 후 강제삭제
 # rpm -qa | grep gcc | xargs rpm -e --nodeps // 관련 항목 한방에 삭제
 
-systemctl start mariadb // db 서버 실행
+# systemctl start mariadb // 데몬 실행
 
 ps -ef | grep gcc // 프로세스 실행 확인
 
