@@ -31,7 +31,7 @@ Stack // 지역변수 매개변수
 # yum -y install man-pages-ko
 
 # rpm -e gcc // 패키지 삭제
-# rpm -e --nodeps gcc // 의존성 검사 생략 후 강제삭제
+# rpm -e --nodeps gcc // 의존성(dependency) 검사 생략 후 강제삭제
 # rpm -qa | grep gcc | xargs rpm -e --nodeps // 관련 항목 한방에 삭제
 
 # systemctl start mariadb // 데몬 실행
