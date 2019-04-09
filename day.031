@@ -31,7 +31,7 @@ Stack // 지역변수 매개변수
 # yum -y install man-pages-ko
 
 # rpm -e openssh-server // 패키지 삭제
-# rpm -e --nodeps openssh-server // 의존성 검사 생략 후 삭제
+# rpm -e --nodeps openssh-server // 의존성 검사 생략 후 강제삭제
 
 systemctl start mariadb // db 서버 실행
 
