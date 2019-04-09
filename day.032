@@ -6,4 +6,12 @@ echo $? // 이전 명령어 실행 결과 (성공시 0, 실패시 0아닌값)
 
 (application (shell (kernel) ) )
 
+kernel // OS(운영체제), 메모리 관리, 시스템 관리
+shell // 명령어 해석
+application // 응용프로그램
+
+bash // born again shell
+
+enable // 내부명령어, bash
+외부명령어, 패키지가 설치되어야함
 
