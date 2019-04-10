@@ -90,7 +90,8 @@ se ts=4
 se shiftwidth=4
 se mouse=a
 
-PATH=.:$PATH // 경로 ./ 설정
+# vi ~/.bash_profile
+
 
 sizeof() // memory 할당 크기, 연산자
 strlen() // 문자열의 길이, null 제외, 함수
