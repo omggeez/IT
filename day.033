@@ -1,0 +1,7 @@
+if문
+if [ -f ~/.bashrc ];
+then . ~/.bashrc // .은 source를 의미
+fi
+
+$$ // process ID
+
