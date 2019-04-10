@@ -91,7 +91,7 @@ se shiftwidth=4
 se mouse=a
 
 # vi ~/.bash_profile
-
+:. 추가 // 현재 경로에서 바로 실행가능
 
 sizeof() // memory 할당 크기, 연산자
 strlen() // 문자열의 길이, null 제외, 함수
