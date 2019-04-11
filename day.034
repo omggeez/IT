@@ -2,3 +2,12 @@
 1 stdout // 표준출력, 모니터
 2 stderr // 표준에러, 모니터
 
+ll -i // index 값 출력
+
+ln a b // hardlink(reference), 파일 a를 파일 b로 복사
+ln -s a b // symboliclink, 파일 a의 바로가기 b를 생성
+
+pipe // process간 통신
+socket // 다른 컴퓨터와의 통신
+
+
