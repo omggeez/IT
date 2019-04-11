@@ -10,4 +10,6 @@ ln -s a b // symboliclink, 파일 a의 바로가기 b를 생성
 pipe // process간 통신
 socket // 다른 컴퓨터와의 통신
 
+배열명은 상수
+포인터는 변수 ex) p = p+1 (가능)
 
